@@ -1,0 +1,19 @@
+<div class="centered-container">
+    <br>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Ingrese el nombre de un Pokemon</mat-label>
+      <input matInput #pokemonName (input)="updateName(pokemonName.value)">
+      <button mat-icon-button matSuffix (click)="loadPokemon()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+    <div *ngIf="pokemonData()" class="pokemon-card">
+      <h2>{{ pokemonData().species.name | uppercase }}</h2>
+      <img [src]="imagenActual()" alt="Imagen del Pokémon">
+    </div>
+    <div *ngIf="loading()" class="loader-container">
+      <div class="loader-container">
+        <span class="loader"></span>
+      </div>
+    </div>
+</div>

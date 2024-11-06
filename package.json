@@ -12,16 +12,22 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
+    "@angular/cdk": "^18.2.11",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
+    "@angular/material": "^18.2.11",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.11",
     "express": "^4.18.2",
+    "firebase": "^11.0.1",
+    "material": "^0.9.16",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.11",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -40,5 +46,11 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
-  }
+  },
+  "styles": [
+    "src/styles.css",
+    "node_modules/primeng/resources/themes/nova-light/theme.css",
+    "node_modules/primeng/resources/primeng.min.css",
+    "node_modules/primeicons/primeicons.css"
+  ]
 }
